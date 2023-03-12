@@ -1,0 +1,313 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px 100px;
+}
+ 
+.bg-grey {
+    background: #f7f7f7;
+}
+
+section > .container{
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 0px 20px;
+}
+
+#nav-bar {
+    text-align: center;
+}
+
+/* Banner */
+.img-banner{
+    position: relative;
+    background-image: url(/images/banner.jpg);
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+}
+.tex-banner{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    text-align: center;
+    color: #f7f7f7;
+    font-size: 20px;
+}
+.tex-banner h1{
+    text-transform: uppercase;
+}
+.tex-banner span{
+    color: #c4bdb5;
+}
+
+/* Nav-bar */
+#nav-bar a:link, a:visited{
+    text-decoration: none;
+    text-transform: uppercase;
+    border-left: 2px solid #c4bdb5;
+    padding: 50px 10px 32px;
+}
+#nav-bar a:hover, a:active{
+    font-weight: bold;
+    cursor: grab;
+}
+.tex-nav{
+    display: inline-block;
+    margin: 10px 20px 0px;
+}
+.tex-nav h1{
+    font-weight: bold;
+    font-size: 32px;
+}
+.tex-nav span{
+    color: #c4bdb5;
+}
+.icon{
+    color: #0abde3;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* info */
+
+.section-content{
+    display: none;
+}
+
+li span{
+    font-weight: bold;
+}
+.mt-40{
+    margin-bottom: 20px;
+}
+.section-title{
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+#target{
+    font-size: 18px;
+    background-color: #faf6f0;
+    width: 100%;
+    height: 400px;
+    padding: 80px;
+
+}
+#personal-info{
+    font-size: 18px;
+    background-color: #fcfaf8;
+    width: 100%;
+    height: 400px;
+    padding: 80px;
+}
+
+.info-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    line-height: 2;
+    margin-top: 10px;    
+}
+
+#email{
+    width: 80%;
+}
+
+
+
+/* Thông tin nghề nghiệp */
+
+.job-box-grid{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    column-gap: 20px;
+    row-gap: 0px;
+    align-items: center;
+    padding: 20px;
+}
+
+.box{
+    border: 2px solid #726767;
+
+} 
+
+.job-content{
+    grid-column: 1/-1;
+    margin: 10px;
+    font-size: 12px;
+}
+.job-title{
+    font-size: 12px;
+    margin-left: 10px;
+}
+.now{
+    background-color: #0abde3;
+    padding: 4px 8px;
+    border-radius: 12px;
+    color: #f7f7f7;
+    text-align: center;
+}
+.list{
+    position: relative;
+}
+.job-node::before{
+    content: "•";
+    color: #0abde3;
+    font-weight: bolder;
+    display: inline-block;
+    font-size: 18px;
+    position: absolute;
+    left: -15px;
+    top: 0;
+}
+
+.ic-like{
+    color: #0abde3;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 2px solid #0abde3;
+    font-size: 25px;
+}
+
+/* good / bad */
+.good{
+background-color: #0abde3;
+display: inline-block;
+height: 2px;
+width: 60px;
+}
+.bad{
+    background-color: #d6dedf;
+    display: inline-block;
+    height: 2px;
+    width: 60px;
+}
+
+/* ẩn thông tin */
+
+.View-more, .Less-more{
+    display: none;
+}
+
+.an{
+    display: none;
+}
+
+/* chứng chỉ giải thưởng */
+
+.img-cc{
+    width: 200px;
+    margin-right: 10px;
+}
+
+.cer-content{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cer-content-2{
+    padding-left: 20px;
+    border-left: 3px solid #d4ccc2;
+}
+
+.cer-content-3{
+    padding-top: 40px;
+    border-top: 3px solid #d4ccc2;
+    grid-column: 1/2;
+}
+
+/* dự án */
+
+.project-gid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+
+.project-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title{
+    padding: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    border: 1px solid #d6dedf;
+}
+
+.project-border{
+    padding: 15px;
+    border-left: 1px solid #d6dedf;
+    border-right: 1px solid #d6dedf;
+}
+
+table{
+    border-collapse: collapse;
+    flex: 1;
+
+}
+
+td{
+    padding: 10px;
+}
+
+tr td:first-child {
+    width: 100px;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+tr{
+    border: 1px solid #d6dedf;
+}
+
+
+/* footer */
+#footer{
+    padding: 1.2rem;
+    text-align: center;
+    align-items: center;
+    line-height: 1.5;
+}
+
+#footer a:link,
+a:visited{
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 50px;
+    text-decoration: none;
+    color: #726767;
+    
+}
+
+#footer a:hover,
+a:active{
+    cursor: grab;
+    color: #0abde3;
+    font-size: 20px;
+
+}
+
+/* Nâng cao */
+
+.avata{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-color: rgb(250, 251, 252);
+    padding: 10px;
+    position: absolute;
+    top: 560px;
+    left: 45%;
+    display: none;
+}
